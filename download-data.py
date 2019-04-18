@@ -1,8 +1,12 @@
 import requests
 import os
+import sys
 
 # date, in YYYYMMDD format
 DATE = '20190415'
+if len(sys.argv) > 1:
+    DATE = sys.argv[1]
+    
 print(DATE)
 
 # Make data directory if not exists
